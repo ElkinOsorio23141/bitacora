@@ -7,18 +7,14 @@ import { CasosComponent } from './Casos/casos/casos.component';
 import { ClientesComponent } from './Clientes/clientes/clientes.component';
 import { EmpleadosComponent } from './Empleados/empleados/empleados.component';
 import { MenuComponent } from './Menu/menu/menu.component';
+import { AppRoutingModule } from '../app/app-routing.module'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    CasosComponent,
-    ClientesComponent,
-    EmpleadosComponent,
-    MenuComponent
+AppComponent
   ],
   imports: [
-    BrowserModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
