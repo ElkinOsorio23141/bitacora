@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
 //#region Funciones
 clickEmpleados(){
 console.log("Empleados.");
-this.router.navigate([`/Empleados`])
+this.router.navigate([`/${PathMap.Empleados}`])
 }
 clickClientes(){
   console.log("Clientes.");
