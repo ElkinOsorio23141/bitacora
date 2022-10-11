@@ -11,8 +11,11 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
+  //#region Eventos
   clickEvent() {
     console.log('entro');
     this.router.navigate([`/${PathMap.Menu}`]);
   }
+  //#endRegion
+  
 }
