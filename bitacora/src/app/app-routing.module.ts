@@ -12,6 +12,18 @@ const routes: Routes = [
     path: PathMap.Menu,
     loadChildren: () => import('./Menu/menu.module').then((m) => m.MenuModule),
   },
+  {
+    path: PathMap.Empleados,
+    loadChildren:()=> import('./Empleados/empleados.module').then((m)=> m.EmpleadosModule),
+  },
+  {
+    path: PathMap.Clientes,
+    loadChildren: () => import('./Clientes/clientes.module'). then((m) => m.ClientesModule),
+  },
+  {
+    path:PathMap.Casos,
+    loadChildren: ()=> import('./Casos/casos.module').then((m)=> m.CasosModule)
+  }
 ];
 
 @NgModule({
