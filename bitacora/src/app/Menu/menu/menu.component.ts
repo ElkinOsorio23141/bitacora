@@ -20,12 +20,12 @@ this.router.navigate([`/${PathMap.Empleados}`])
 }
 clickClientes(){
   console.log("Clientes.");
-  this.router.navigate([`/Clientes`])
+  this.router.navigate([`/${PathMap.Clientes}`])
 
 }
 clickCasos(){
   console.log("Casos.");
-  this.router.navigate([`/Casos`])
+  this.router.navigate([`/${PathMap.Casos}`])
 
 }
 clickCerrarSesion(){
