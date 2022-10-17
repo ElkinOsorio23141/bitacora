@@ -21,6 +21,11 @@ li{
     padding: 14px;
     text-decoration: none;
     background-color: rgb(21, 103, 175);
+    
+}
+
+.float{
+    float: right;
 }
 
 li:hover {
