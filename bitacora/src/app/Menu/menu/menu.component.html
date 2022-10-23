@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="styleshet" href="menu.component.css" type="text/css">
+    <link rel="styleshet" href="menu.component.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <ul>
-      <li class="active">
-        <input type="button" value="Empleados" (click)="clickEmpleados()" />
-      </li>
-      <li>
-        <input type="button" value="Clientes" (click)="clickClientes()" />
-      </li>
-      <li><input type="button" value="Casos" (click)="clickCasos()" /></li>
-      <li class="float">
+    <header>
+      <h1>Bitacora de casos</h1>
+    </header>
+    <div class="registros">
+      <img id="empleados" src="./assets/Icon/registro-clientes.jpg" alt="registro de empleados" (click)="clickEmpleados()">
+      <img id="clientes" src="./assets/Icon/registro-usuarios.jpg" alt="registro de empleados" (click)="clickClientes()">
+      <img id="casos" src="./assets/Icon/registro-casos.jpg" alt="registro de empleados" (click)="clickCasos()">
+    </div>
+      <!--<input type="button" value="Empleados" (click)="clickEmpleados()" />
+      <input type="button" value="Clientes" (click)="clickClientes()" />
+      <input type="button" value="Casos" (click)="clickCasos()" />-->
+    <!---- <li class="float">
         <input type="button"
           value="Cerrar sesión"
           (click)="clickCerrarSesion()"
-        />
-      </li>
-    </ul>
+        />-->
   </body>
 </html>
