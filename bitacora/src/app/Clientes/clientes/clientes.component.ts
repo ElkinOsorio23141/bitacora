@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PathMap } from 'src/app/@core/enums/path-map.enum';
 
 @Component({
   selector: 'app-clientes',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  clickEvent() {
+    console.log('entro');
+    this.router.navigate([`/${PathMap.Menu}`]);
   }
 
 }
